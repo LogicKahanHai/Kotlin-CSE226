@@ -7,11 +7,32 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+<Button
         android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        />
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="38dp"
+        android:text="Start Service"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="353dp"
+        android:text="Stop Service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
