@@ -32,21 +32,21 @@ class GridViewAdapter(
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        var convertView = convertView
+        var convertVieww = convertView
         if (layoutInflater == null) {
             layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater;
         }
-        if (convertView == null) {
-            convertView = layoutInflater!!.inflate(R.layout.grid_layout_card_view, null)
+        if (convertVieww == null) {
+            convertVieww = layoutInflater!!.inflate(R.layout.grid_layout_card_view, null)
         }
 
-        courseImageView = convertView!!.findViewById(R.id.IVCourse)
-        courseTextView = convertView.findViewById(R.id.TVCourse)
+        courseImageView = convertVieww!!.findViewById(R.id.IVCourse)
+        courseTextView = convertVieww.findViewById(R.id.TVCourse)
 
         courseImageView.setImageResource(courseList[position].courseImg)
         courseTextView.text = courseList[position].courseName;
 
-        return convertView
+        return convertVieww
 
     }
 
