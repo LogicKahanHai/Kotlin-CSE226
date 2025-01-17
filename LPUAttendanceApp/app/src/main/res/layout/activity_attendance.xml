@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    android:gravity="center_vertical">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text_color"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/header_background"
+        android:text="Attendance for Section: X, Time Slot: Y"/>
+
+    <!-- QR Scanner Button -->
+    <Button
+        android:id="@+id/btnScanQrCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code Again"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:background="@drawable/rounded_button"
+        />
+
+    <!-- Generate CSV Button -->
+    <Button
+        android:id="@+id/btnGenerateCsv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate CSV"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:padding="14dp"
+        android:background="@drawable/rounded_button_secondary"
+         />
+
+    <!-- RecyclerView for Student List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/recycler_background"
+        android:padding="12dp"
+        android:clipToPadding="false" />
+</LinearLayout>

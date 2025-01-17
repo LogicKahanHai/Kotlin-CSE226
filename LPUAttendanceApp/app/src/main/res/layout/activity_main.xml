@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:contentDescription="App Logo"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Student"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        android:elevation="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Teacher"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        android:elevation="4dp"/>
+</LinearLayout>
